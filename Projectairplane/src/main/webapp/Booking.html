@@ -1,0 +1,151 @@
+<html>
+ <link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+h1 {
+	color: black;
+	font-family: DejaVu Serif;
+}
+
+body {
+	color: black;
+	background-image: url("flight-booking-software-fb.jpg");
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.col-3{
+size:50%;}
+.bla{
+margin-left:50px;
+width:27%;
+}
+
+   .nav-link{
+color:black;
+font-size: 20px;}
+.navbar-brand{
+font-size:20px;
+color:black;
+}   
+.container{
+width:3000px;}
+p {
+	font-family: DejaVu Serif;
+	font-size: 16px;
+	text-align: justify;
+	text-justify: inter-word;
+}
+</style>
+<h1>
+		<center>BOOKING RECORD</center>
+	</h1>
+
+<body>
+	<br>
+	<div class="container">
+		<nav class="navbar navbar-expand-lg bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="AboutUs.html" style="color:white">GoTAirlines</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="AboutUs.html" style="color:white" ><span class="glyphicon glyphicon-user"></span>Home</a>&nbsp
+        </li>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<li class="nav-item">
+          <a class="nav-link" href="passenger.html" style="color:white"><span class="glyphicon glyphicon-edit"></span>PassengerDetails</a>&nbsp
+        </li>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <li class="nav-item">
+          <a class="nav-link" href="Flight.html" style="color:white"><span class="glyphicon glyphicon-calendar"></span>FlightDetails</a>&nbsp
+        </li>
+       &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<li class="nav-item">
+          <a class="nav-link" href="Booking.html" style="color:white"><span class="glyphicon glyphicon-calendar"></span>Booking</a>&nbsp
+        </li>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<li class="nav-item">
+          <a class="nav-link" href="checkin.html" style="color:white"><span class="glyphicon glyphicon-ok-sign"></span>CheckIn</a>&nbsp
+        </li>
+  
+        
+      </ul>
+      
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+	</div>
+	<br>
+	
+	
+	<form action=booking.jsp class="row g-3" method="post">
+  <div class="col-md-6 bla">
+    <label for="inputState" class="form-label">FLIGHT ID</label>
+    <select id="inputState" class="form-select" name=t1>
+  
+                <option selected="98765432">98765432</option>
+                <option selected="37299846">37299846</option>
+				<option selected="87721982">87721982</option>
+				<option selected="65129938">65129938</option>
+				<option selected="34142658">34142658</option>
+				<option selected="FLIGHT ID">FLIGHT ID</option></select><br>
+</div>
+				
+				
+  <div class="col-md-6 bla">
+    <label for="inputPassword4" class="form-label">BOOKING DATE</label>
+    <input type="date" class="form-control" id="inputPassword4" placeholder="BOOKING DATE" name=t2><br>
+  </div>
+
+  <div class="col-md-6 bla">
+  
+    <label for="inputState" class="form-label">DESTINATION</label>
+    <select id="inputState" class="form-select" class="form-control" name=t3>
+  
+                <option selected="CHICAGO">CHICAGO</option>
+                <option selected="SOUTH KOREA">SOUTH KOREA</option>
+				<option selected="BRAZIL">BRAZIL</option>
+				<option selected="CANADA">CANADA</option>
+				<option selected="NEW YORK">NEW YORK</option>
+				<option selected="DESTINATION">DESTINATION</option></select><br></div>
+				
+				
+  <div class="col-md-6 bla">
+    <label for="inputState" class="form-label">FARE</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="INR" name=t4><br>
+     
+  </div>
+ 
+   <div class="col-md-6 bla">
+    <label for="inputPassword4" class="form-label">FLIGHT DATE</label>
+    <input type="date" class="form-control" id="inputPassword4" placeholder="FLIGHT DATE" name=t5><br>
+  </div>
+  
+  <div class="col-md-6 bla">
+    <label for="inputState" class="form-label">FLIGHT NUMBER</label>
+    <select id="inputState" class="form-select" class="form-control" name=t6>
+  
+                <option selected="BI9C4O32">BI9C4O32</option>
+                <option selected="N99T4N25">N99T4N25</option>
+				<option selected="8RD21T82">8RD21T82</option>
+				<option selected="P51HA938">P51HA938</option>
+				<option selected="X4K42FG8">X4K42FG8</option>
+				<option selected="FLIGHT NUMBER">FLIGHT NUMBER</option></select><br></div>
+ 
+   
+  
+  <center><div class="col-3">
+    <button type="submit" class="btn btn-primary" style="size:50%;align:center;" name=b1>SUBMIT</button>
+  </div></center>
+
+</form>
+</html>
